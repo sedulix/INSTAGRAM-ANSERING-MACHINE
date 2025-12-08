@@ -37,16 +37,18 @@ git clone <repo_url>
 
 > Before filling in the `.env` file, you need to:
 >
-> * Get your **OpenRouter API key** and model name.
-> * Create a **Telegram bot via BotFather** to get the token.
+> * Get your **[OpenRouter](https://openrouter.ai/) API key** and model name
+> * Create a **Telegram bot via [BotFather](https://t.me/BotFather)** to get the token
 > * Prepare your **Instagram username and password**.
 
 Example `.env`:
 
 ```env
 BOT_TOKEN=<Your Telegram Bot Token>
-OPENROUTER_API_KEY=<Your OpenRouter API Key>
-OPENROUTER_MODEL=<Your OpenRouter Model Name>
+INSTAGRAM_USERNAME=<Your Instagram Username>
+INSTAGRAM_PASSWORD=<Your Instagram Password>
+OPENROUTER_API_KEY=<Your OpenRouter / OpenAI API Key>
+OPENROUTER_MODEL=<Your OpenRouter / OpenAI Model Name>
 ```
 
 3. **Create a folder for storing small data:**
