@@ -1,74 +1,81 @@
-Instagram + Telegram Bot with AI and Database Integration
-Project Overview
 
-This bot was created for practical purposes for the company Sanat, which is a wellness sanatorium.
-Its main goal is to automate user request processing and provide managers with notifications about new inquiries.
 
-Functionality
+---
 
-User interaction via Instagram:
-The user sends a message to the Instagram bot, and the bot gathers the necessary information from the user using AI.
+## Instagram + Telegram Bot 🤖
 
-Database storage:
-The bot stores the collected information as a new entry in the database (LeadDB).
+This bot was created **for practical purposes** for the company **Sanat**, a wellness sanatorium.
+It automates user request processing and notifies managers about new inquiries, making communication with clients fast and efficient.
 
-Telegram notifications for managers:
-A Telegram bot monitors the database for new requests.
-When a new request appears, it sends a message to a dedicated chat where the manager can view the request and contact the client directly if needed.
+---
 
-Installation and Setup
+## 📝 Functionality
 
-Clone the repository:
+1. **Instagram User Interaction**
 
+> Users send messages to the Instagram bot. The bot uses AI to understand what the user wants and collects the required information.
+
+2. **Database Storage**
+
+> Collected requests are stored in a database (LeadDB) for tracking and processing.
+
+3. **Telegram Notifications for Managers**
+
+> A Telegram bot monitors the database. When a new request appears, it sends a notification to a dedicated chat.
+> Managers can **view the request**, **contact the client**, and **update the request status** directly from Telegram.
+
+---
+
+## ⚙️ Installation & Run
+
+1. Clone the repository:
+
+```bash
 git clone <repo_url>
+```
 
+2. Create a `.env` file with your credentials and tokens:
 
-Set up the .env file
+> Before filling in the `.env` file, you need to:
+>
+> * Get your **OpenRouter API key** and model name.
+> * Create a **Telegram bot via BotFather** to get the token.
+> * Prepare your **Instagram username and password**.
 
-Before running the bot, you need to fill in the .env file with the following data:
+Example `.env`:
 
-OpenRouter API key and model name:
+```env
+BOT_TOKEN=<Your Telegram Bot Token>
+OPENROUTER_API_KEY=<Your OpenRouter API Key>
+OPENROUTER_MODEL=<Your OpenRouter Model Name>
+```
 
-Sign up at OpenRouter
+3. Install dependencies:
 
-and get your API key.
-
-Choose the model you want to use (e.g., GPT-based) and copy its name.
-
-Telegram bot token:
-
-Create a bot via BotFather
-
-on Telegram.
-
-Copy the generated token.
-
-Instagram credentials:
-Enter your Instagram username and password for the bot to read user messages.
-
-
-Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
+4. Run the bot:
 
-Run the bot:
-
+```bash
 python main.py
+```
 
+> On first run, the bot will ask for login credentials and Telegram chat ID for notifications.
+> After that, it starts monitoring Instagram messages, storing requests in the database, and sending Telegram notifications.
 
-On the first run, the bot will prompt you for login credentials and the chat ID for Telegram notifications.
+---
 
-After that, the bot will start monitoring Instagram messages, store user requests in the database, and send notifications to the Telegram chat.
+## 🔧 Tech Stack
 
-Tech Stack
+* **Python** — core programming language <br>
+* **instagrapi** — Instagram API interaction <br>
+* **aiogram** — Telegram bot framework <br>
+* **OpenAI / OpenRouter** — AI for understanding user intent <br>
+* **SQLite / LeadDB** — database for storing requests <br>
+* **dotenv** — environment variable management <br>
+* **asyncio** — asynchronous background tasks
 
-Python — main programming language
-instagrapi — for interacting with Instagram and reading user messages
-aiogram — for building the Telegram bot
-OpenAI / OpenRouter AI models — to understand user intent and generate responses
-SQLite / LeadDB — database for storing user requests
-dotenv — for storing secret keys and tokens
-asyncio — for asynchronous message handling and background tasks
-
+---
 
