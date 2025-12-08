@@ -1,5 +1,4 @@
 
-
 ---
 
 ## Instagram + Telegram Bot 🤖
@@ -50,13 +49,18 @@ OPENROUTER_API_KEY=<Your OpenRouter API Key>
 OPENROUTER_MODEL=<Your OpenRouter Model Name>
 ```
 
-3. Install dependencies:
+3. **Create a folder for storing small data:**
+
+> Create a folder named `json_files` in the project root.
+> It will be used to store data like passwords, chat IDs, and usernames.
+
+4. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the bot:
+5. Run the bot:
 
 ```bash
 python main.py
@@ -79,3 +83,14 @@ python main.py
 
 ---
 
+## ⚠️ Important Notes
+
+* Be careful with sensitive data in `.env` and `json_files`.
+* Avoid running the bot too many times in a short period — Instagram may **blacklist your API address**, and you may lose access to user data.
+* This bot is intended for **a single user / manager setup**.
+
+---
+
+Если хочешь, я могу ещё сделать блок **📂 Project Structure** с визуальным описанием папок и файлов, как в примере с игрой, чтобы README был полностью наглядным для GitHub.
+
+Хочешь, чтобы я это сделал?
