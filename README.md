@@ -30,7 +30,7 @@ This bot was created for practical purposes for Sanat company, a wellness sanato
 1. Clone the repository:
 
 ```bash
-git clone <sedulix/INSTAGRAM-ANSERING-MACHINE>
+git clone https://github.com/sedulix/INSTAGRAM-ANSERING-MACHINE
 ```
 
 2. Create a `.env` file with your credentials and tokens:
