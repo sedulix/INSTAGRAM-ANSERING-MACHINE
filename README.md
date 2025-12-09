@@ -45,8 +45,6 @@ Example `.env`:
 
 ```env
 BOT_TOKEN=<Your Telegram Bot Token>
-INSTAGRAM_USERNAME=<Your Instagram Username>
-INSTAGRAM_PASSWORD=<Your Instagram Password>
 OPENROUTER_API_KEY=<Your OpenRouter / OpenAI API Key>
 OPENROUTER_MODEL=<Your OpenRouter / OpenAI Model Name>
 ```
