@@ -3,9 +3,9 @@
 
 ## Instagram + Telegram Bot 🤖
 
-This bot was created **for practical purposes** for the company **Sanat**, a wellness sanatorium.
-It automates user request processing and notifies managers about new inquiries, making communication with clients fast and efficient.
+This bot replies to new incoming messages.
 
+This bot was created for practical purposes for Sanat company, a wellness sanatorium. It automates user request processing and notifies managers about new inquiries via Telegram, making communication with clients faster and more efficient.
 ---
 
 ## 📝 Functionality
