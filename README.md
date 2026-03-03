@@ -77,7 +77,7 @@ python main.py
 * **instagrapi** — Instagram API interaction <br>
 * **aiogram** — Telegram bot framework <br>
 * **OpenAI / OpenRouter** — AI for understanding user intent <br>
-* **SQLite / LeadDB** — database for storing requests <br>
+* **SQLite** — database for storing requests <br>
 * **dotenv** — environment variable management <br>
 * **asyncio** — asynchronous background tasks
 
