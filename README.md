@@ -1,7 +1,7 @@
 
 ---
 
-## Instagram + Telegram Bot 🤖
+## Instagram + Telegram Bot 🤖 (WIP)
 
 This bot replies to new incoming messages.
 
